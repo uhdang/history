@@ -29,9 +29,9 @@ $ \c [DBNAME]
 
 ## Create Table
 CREATE TABLE "user" (
-    username    VARCHAR(15),
-    email       VARCHAR(15),
-    password    VARCHAR(15)
+    username    VARCHAR(30),
+    email       VARCHAR(30),
+    password    VARCHAR(30)
 );
 
 ## Check Table
@@ -43,3 +43,11 @@ $ \d [tablename]
 ## Select Query
 $ SELECT * FROM "user"
 
+## Describe Table
+$ \d+ [tablename]
+
+## Change datatype in Table
+$ alter table [tablename] alter column [column name] type [new type];
+
+## Delete
+$ delete from [tablename] where [condition];
